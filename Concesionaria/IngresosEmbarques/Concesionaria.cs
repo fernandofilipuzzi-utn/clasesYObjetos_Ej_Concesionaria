@@ -8,11 +8,10 @@ namespace IngresosEmbarques
 {
     class Concesionaria
     {
-        #region variables del embarques
+        #region variables de todos los embarques
         int añoActual;
-
-        public double MontoEmbarques { get; set; }
-
+        public int cantEmbarques;
+        public double montoEmbarques;
         #endregion
 
         #region xEmbarque
@@ -23,8 +22,8 @@ namespace IngresosEmbarques
         public void Inicializar(int añoActual)
         {
             this.añoActual = añoActual;
-            cantEmbarque = 0;
-            MontoEmbarques = 0;
+            cantEmbarques = 0;
+            montoEmbarques = 0;
         }
 
         public void InicializarEmbarque(int nroEmbarque)
@@ -50,10 +49,10 @@ namespace IngresosEmbarques
 
         public void FinalizarEmbarque()
         {            
-            cantEmbarque++;
+            cantEmbarques++;
 
             #region actualizar el monto X embarque
-            MontoEmbarques += montoXEmbarque;
+            montoEmbarques += montoXEmbarque;
             #endregion            
         }
     }
