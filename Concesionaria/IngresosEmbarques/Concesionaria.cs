@@ -26,6 +26,7 @@ namespace IngresosEmbarques
             MontoEmbarques = 0;
         }
 
+        #region operaciones propias de un embarque
         public void InicializarEmbarque(int nroEmbarque)
         {
             this.NroEmbarque = nroEmbarque;
@@ -55,5 +56,6 @@ namespace IngresosEmbarques
             MontoEmbarques += MontoXEmbarque;
             #endregion            
         }
+        #endregion
     }
 }
