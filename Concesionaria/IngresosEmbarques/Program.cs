@@ -76,7 +76,7 @@ namespace IngresosEmbarques
                             Console.WriteLine("Resumen del embarque");
 
                             #region informar el total del embarque
-                            Console.WriteLine("Monto total del embarque ingresado es: ${0:f2}", c.montoXEmbarque);
+                            Console.WriteLine("Monto total del embarque ingresado es: ${0:f2}", c.MontoXEmbarque);
                             #endregion
                                                         
                             #endregion

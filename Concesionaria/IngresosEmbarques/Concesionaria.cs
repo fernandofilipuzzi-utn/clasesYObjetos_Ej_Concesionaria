@@ -15,8 +15,8 @@ namespace IngresosEmbarques
         #endregion
 
         #region xEmbarque
-        public int nroEmbarque;
-        public double montoXEmbarque;
+        public int NroEmbarque { get; private set; }
+        public double MontoXEmbarque { get; private set; }
         #endregion
 
         public void Inicializar(int añoActual)
@@ -28,8 +28,8 @@ namespace IngresosEmbarques
 
         public void InicializarEmbarque(int nroEmbarque)
         {
-            this.nroEmbarque = nroEmbarque;
-            montoXEmbarque = 0;
+            this.NroEmbarque = nroEmbarque;
+            MontoXEmbarque = 0;
         }
 
         public double AgregarMoto(int modelo, double valorFabricacion)
@@ -41,7 +41,7 @@ namespace IngresosEmbarques
             #endregion
 
             #region actualizar el monto X embarque
-            montoXEmbarque += valorActual;
+            MontoXEmbarque += valorActual;
             #endregion
 
             return valorActual;
@@ -52,7 +52,7 @@ namespace IngresosEmbarques
             CantEmbarques++;
 
             #region actualizar el monto X embarque
-            MontoEmbarques += montoXEmbarque;
+            MontoEmbarques += MontoXEmbarque;
             #endregion            
         }
     }
