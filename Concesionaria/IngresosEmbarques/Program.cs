@@ -92,8 +92,8 @@ namespace IngresosEmbarques
 
                             // mostrar resultados finales de caja
                             #region informar el total de todos los embarques y cantidad de embarques
-                            Console.WriteLine("Monto total de todos los embarques ingresados es: ${0:f2}", c.montoEmbarques);
-                            Console.WriteLine("Cantidad de embarques: {0}", c.cantEmbarques);
+                            Console.WriteLine("Monto total de todos los embarques ingresados es: ${0:f2}", c.MontoEmbarques);
+                            Console.WriteLine("Cantidad de embarques: {0}", c.CantEmbarques);
                             #endregion
 
                             Console.WriteLine("Presione una tecla para volver al menú");

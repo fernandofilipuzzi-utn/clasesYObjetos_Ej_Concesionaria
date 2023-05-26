@@ -10,8 +10,8 @@ namespace IngresosEmbarques
     {
         #region variables de todos los embarques
         int añoActual;
-        public int cantEmbarques;
-        public double montoEmbarques;
+        public int CantEmbarques { get; private set; }
+        public double MontoEmbarques { get; private set; }
         #endregion
 
         #region xEmbarque
@@ -22,8 +22,8 @@ namespace IngresosEmbarques
         public void Inicializar(int añoActual)
         {
             this.añoActual = añoActual;
-            cantEmbarques = 0;
-            montoEmbarques = 0;
+            CantEmbarques = 0;
+            MontoEmbarques = 0;
         }
 
         public void InicializarEmbarque(int nroEmbarque)
@@ -49,10 +49,10 @@ namespace IngresosEmbarques
 
         public void FinalizarEmbarque()
         {            
-            cantEmbarques++;
+            CantEmbarques++;
 
             #region actualizar el monto X embarque
-            montoEmbarques += montoXEmbarque;
+            MontoEmbarques += montoXEmbarque;
             #endregion            
         }
     }
